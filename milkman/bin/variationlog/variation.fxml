@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="variationlog.variationController">
+   <children>
+      <TableView fx:id="tableview" layoutX="14.0" layoutY="248.0" prefHeight="343.0" prefWidth="577.0" />
+      <Button layoutX="253.0" layoutY="211.0" mnemonicParsing="false" onAction="#doFetchAll" prefHeight="27.0" prefWidth="94.0" text="fetch All`" />
+      <DatePicker fx:id="startDate" layoutX="34.0" layoutY="116.0" prefHeight="43.0" prefWidth="212.0" />
+      <DatePicker fx:id="EndDate" layoutX="275.0" layoutY="116.0" prefHeight="43.0" prefWidth="212.0" />
+      <Label layoutX="34.0" layoutY="90.0" prefHeight="17.0" prefWidth="131.0" text="Stating date" />
+      <Label layoutX="275.0" layoutY="90.0" prefHeight="17.0" prefWidth="131.0" text="Ending date" />
+      <ComboBox fx:id="comboName" layoutX="228.0" layoutY="34.0" prefWidth="150.0" />
+      <Label layoutX="159.0" layoutY="39.0" prefHeight="17.0" prefWidth="48.0" text="Name" />
+      <Button layoutX="497.0" layoutY="124.0" mnemonicParsing="false" onAction="#doFetchByDate" prefHeight="27.0" prefWidth="64.0" text="fetch" />
+      <Button layoutX="381.0" layoutY="34.0" mnemonicParsing="false" onAction="#doComboFetch" prefHeight="27.0" prefWidth="64.0" text="fetch" />
+   </children>
+</AnchorPane>

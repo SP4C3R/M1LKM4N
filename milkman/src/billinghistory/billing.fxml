@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="billinghistory.billingController">
+   <children>
+      <TableView fx:id="tableview" layoutX="11.0" layoutY="162.0" prefHeight="358.0" prefWidth="577.0" />
+      <ComboBox fx:id="comboName" layoutX="185.0" layoutY="44.0" prefHeight="35.0" prefWidth="179.0" />
+      <Label layoutX="113.0" layoutY="49.0" prefHeight="23.0" prefWidth="65.0" text="Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="371.0" layoutY="44.0" mnemonicParsing="false" onAction="#doComboFetch" prefHeight="35.0" prefWidth="128.0" text="Show All">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <RadioButton layoutX="187.0" layoutY="112.0" mnemonicParsing="false" onMouseClicked="#doPaid" prefHeight="27.0" prefWidth="84.0" text="Paid">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="ab" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="280.0" layoutY="112.0" mnemonicParsing="false" onMouseClicked="#doUnpaid" prefHeight="27.0" prefWidth="102.0" text="unpaid" toggleGroup="$ab">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="193.0" layoutY="541.0" mnemonicParsing="false" onAction="#doExportExcel" prefHeight="27.0" prefWidth="230.0" text="Export to Excel">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Separator layoutX="84.0" layoutY="90.0" prefHeight="4.0" prefWidth="439.0" />
+   </children>
+</AnchorPane>

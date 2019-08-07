@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboard.dashboardController">
+   <children>
+      <Button layoutX="171.0" layoutY="139.0" mnemonicParsing="false" onAction="#doCoustmerEntry" prefHeight="40.0" prefWidth="203.0" text="Coustmer Entry">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button layoutX="171.0" layoutY="215.0" mnemonicParsing="false" onAction="#doVariationConsole" prefHeight="40.0" prefWidth="203.0" text="Variation Console">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button layoutX="170.0" layoutY="295.0" mnemonicParsing="false" onAction="#doBilling" prefHeight="40.0" prefWidth="203.0" text="Billing">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button layoutX="170.0" layoutY="385.0" mnemonicParsing="false" onAction="#doCoustmerTableView" prefHeight="40.0" prefWidth="203.0" text="Coustmers table view">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button layoutX="170.0" layoutY="484.0" mnemonicParsing="false" onAction="#doVariationlog" prefHeight="40.0" prefWidth="203.0" text="Variation Log">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button layoutX="171.0" layoutY="573.0" mnemonicParsing="false" onAction="#doPaymentLog" prefHeight="40.0" prefWidth="203.0" text="Pament log">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button layoutX="170.0" layoutY="659.0" mnemonicParsing="false" onAction="#doBillingHistory" prefHeight="40.0" prefWidth="203.0" text="Billing History">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Label layoutX="119.0" layoutY="43.0" prefHeight="41.0" prefWidth="315.0" text="Dashboard Milk Man">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Button layoutX="485.0" layoutY="72.0" mnemonicParsing="false" onAction="#doSignout" prefHeight="14.0" prefWidth="92.0" text="Sign out">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Separator layoutX="72.0" layoutY="93.0" prefHeight="1.0" prefWidth="390.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="signup.signupController">
+   <children>
+      <Label layoutX="231.0" layoutY="24.0" prefHeight="40.0" prefWidth="96.0" text="Signup">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Separator layoutX="180.0" layoutY="65.0" prefWidth="200.0" />
+      <TextField fx:id="txtName" layoutX="163.0" layoutY="106.0" prefHeight="40.0" prefWidth="269.0" promptText="Name">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtContact" layoutX="163.0" layoutY="184.0" prefHeight="40.0" prefWidth="269.0" promptText="Contact Number">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCity" layoutX="164.0" layoutY="268.0" prefHeight="40.0" prefWidth="269.0" promptText="City">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </TextField>
+      <Button layoutX="225.0" layoutY="449.0" mnemonicParsing="false" onAction="#doSingup" prefHeight="40.0" prefWidth="122.0" text="SignUp">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="txtPassword" layoutX="163.0" layoutY="360.0" prefHeight="41.0" prefWidth="269.0" promptText="Password">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>
